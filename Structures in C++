@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+struct Student {
+    int id;
+    int age;
+};
+
+int main() {
+    Student student1;
+    student1.id = 1;
+    student1.age = 20;
+
+    cout << "ID: " << student1.id << endl;
+    cout << "Age: " << student1.age << endl;
+
+    return 0;
+}
