@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+    string s;
+    string p;
+    string q;
+    getline(cin,q);               //takes whole string
+    cin>>p;                       //takes the sentence till space(" ") or first word          
+    s="aashish kumar";             // also string s("aashish");
+    string s2="chouhan";
+    int len=s.length();
+    for(int i=0;i<len;i++){
+        cout<<s[i]<<" ";
+    }
+    cout<<endl;
+    cout<<s+" "+s2<<endl;
+    cout<<p<<endl;
+    cout<<q<<endl;    
+    s2.append(" Hello");  
+    cout<<s2<<endl;
+    string a="nikhil thakur";
+    string b=a.substr(0,9);
+    cout<<b<<endl;
+    b.push_back('w');            // adds a character at the last
+    cout<<b<<endl;
+    b.pop_back();                // removes the last element/character -'w'
+    b.pop_back();                // again removes the last character - 'h'
+    cout<<b<<endl;
+    for(auto& x:a){
+        cout<<x<<" ";
+    }cout<<endl;
+    return 0;
+}
